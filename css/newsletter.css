@@ -1,0 +1,154 @@
+      /* Base Reset */
+.newsletter-container {
+  margin: 0 auto;
+  padding-top: 70px;
+  background-color: #f5f6f7;
+  margin-bottom: -85px;}
+
+.newsletter {
+  background-color: #f2664e;
+  color: white;
+  padding: 25px 25px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.icontext-content,
+.form-content {
+  max-width: 50%;
+  width: 100%;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-content span {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: white;
+}
+
+/* Responsive Layout Adjustments */
+
+/* Small devices (xs, sm: screens < 768px) */
+@media (max-width: 767px) {
+  .newsletter {
+    flex-direction: column; /* Stack content in a single column */
+    gap: 20px; /* Add spacing between stacked items */
+    text-align: center; /* Center-align text */
+  }
+
+  .icontext-content,
+  .form-content {
+    max-width: 100%; /* Allow each section to take full width */
+    width: 100%;
+  }
+
+  .text-content {
+    display: none; /* Hide text-content on small screens */
+  }
+}
+
+/* Medium devices (md: screens 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .newsletter {
+    flex-direction: column; /* Stack content in a single column */
+    gap: 30px;
+    text-align: center;
+  }
+
+  .icontext-content,
+  .form-content {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .text-content {
+    display: none; /* Hide text-content on medium screens */
+  }
+}
+
+/* Large devices (lg: screens >= 992px) */
+@media (min-width: 992px) {
+  .newsletter {
+    flex-direction: row; /* Maintain row layout for larger screens */
+  }
+
+  .text-content {
+    display: block; /* Show text-content on larger screens */
+  }
+
+  .text-content span {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .text-content p {
+    display: none;
+  }
+}
+
+/* Styles for extra-large screens go here */
+@media (min-width: 1280px) {
+  .text-content p {
+    display: block;
+  }
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-top: -10px;
+}
+
+.form-content {
+  position: relative;
+}
+
+.email {
+  flex: 1;
+  padding: 17px;
+  width: 100%;
+  border: 1px;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.subscribe {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  padding: 10px 20px;
+  background-color: #f2664e;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #f4f4f4;
+}

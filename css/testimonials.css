@@ -1,0 +1,144 @@
+
+.slider-section {
+  text-align: center;
+  width: 100%;
+}
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+}
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Ensure the wrapper takes full width */
+}
+.slide {
+  flex: 0 0 100%; /* Default to 1 card per row for small screens */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.card {
+  background: #f5f6f7;
+  border-radius: 10px;
+  width: 100%; /* Adjust width dynamically */
+  min-width: 324px; /* Prevent overflow on large screens */
+  height: 220px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: start;
+  margin: auto; /* Center align cards */
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.card-name {
+  margin-top: 0px;
+  text-align: start;
+  gap: 10px;
+}
+.card-name p {
+  color: gray;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.stars {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.review {
+  font-size: 16px;
+  color: #445164;
+  text-align: start;
+  word-wrap: break-word; /* Wraps text to the next line if it gets too long */
+  overflow-wrap: break-word;
+  line-height: 22px;
+}
+
+.slider-controls {
+  margin-top: 20px;
+}
+
+.control:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+/* ExtraSmall devices (xs: screens < 639px) */
+@media (max-width: 639px) {
+  .slide {
+    flex: 0 0 100%; /* 1 card per row for extra-small screens */
+  }
+  .review {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .card {
+    min-width: 324px; 
+    height: fit-content;
+    margin: auto; /* Center align cards */
+  }
+}
+
+/* Small devices (sm: screens < 768px) */
+@media (max-width: 767px) {
+  .slide {
+    flex: 0 0 100%; 
+  }
+  .review {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .card {
+    min-width: full; 
+    height: fit-content;
+    margin: auto; 
+    padding: 25px;
+  }
+}
+
+/* Medium devices (md: screens 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .slide {
+    flex: 0 0 50%; /* 2 cards per row for medium screens */
+  }
+  .review {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .card {
+    min-width: full; 
+    height: fit-content;
+    margin: auto; 
+    padding: 25px;
+  }
+}
+
+/* Large devices (lg: screens >= 992px) */
+@media (min-width: 992px) {
+  .slide {
+    flex: 0 0 50%; 
+  
+     /* 3 cards per row for larger screens */
+  }
+}
+
+@media (min-width: 1280px) {
+  .slide {
+    flex: 0 0 33.333%; /* 4 cards per row for larger screens */
+  }
+  .card {
+    min-width: full; 
+    height: fit-content;
+    margin: auto; 
+    padding: 25px;
+  }
+}

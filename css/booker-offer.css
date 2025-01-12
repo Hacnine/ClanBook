@@ -1,0 +1,124 @@
+.pricing-container{
+    background-color: #f5f6f7;
+}
+
+.offer-details {
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.offer-details .features {
+    width: 45%;
+    min-width: 300px;
+}
+
+.offer-details .features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.offer-details .features ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.offer-details .features ul li::before {
+    content: '✔';
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+.features{
+    /* padding:50px 0 50px 0; */
+    height: fit-content;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    margin-top: -17px;
+    border: var(--border-color) solid 1px
+}
+
+.offer-details .products {
+    width: 45%;
+    min-width: 300px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #EAECF0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.product h3 {
+    font-size: 18px;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product .price {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    border: #EAECF0;
+}
+
+.place-order {
+    text-align: start;
+    padding: 20px 0;
+}
+
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .offer-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-details .features, .offer-details .products {
+        width: 100%;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .product h3 {
+        font-size: 18px;
+    }
+
+    .product p {
+        font-size: 14px;
+    }
+
+    .product .price {
+        font-size: 20px;
+    }
+
+    .place-order button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
