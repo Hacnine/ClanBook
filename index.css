@@ -209,37 +209,6 @@ nav {
 .custom-button:hover {
   background-color: #d2553e;
 }
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  float: left;
-}
-
-nav ul li a {
-  display: block;
-  color: var(--main-color);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  color: var(--secondary-color);
-}
-
-nav ul li a.active {
-  color: var(--secondary-color);
-}
-
-section {
-  padding: 20px;
-}
-
-section h1 {
-  margin-top: 0;
+#shadow-host-companion {
+  display: none;
 }

@@ -25,7 +25,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 7px;
+    gap: 14px;
   }
 .seperator{
   color: #D6DAE1;
@@ -33,7 +33,7 @@
   nav ul li a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   nav ul li a.active {

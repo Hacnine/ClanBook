@@ -4,7 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social Media Icons Grid</title>
-    <link rel="stylesheet" href="css/booker-experience.css" />
+    <!-- <link rel="stylesheet" href="css/booker-experience.css" /> -->
+    <style>
+
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center;
+     
+    }
+    
+    .grid-item {
+        text-align: center;
+        background-color: #fafbfc;
+        width: 200px;
+        height: 180px;
+        border: 1px;
+        border-radius: 16px;
+        border-color: #EAECF0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 600;
+    }
+    
+    .grid-item img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .grid-item p {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    
+    @media (max-width: 1200px) {
+      .grid-item {
+        text-align: center;
+        background-color: #fafbfc;
+        width: 180px;
+        height: 160px;}
+    }
+    /* Medium screens (tablets) */
+    @media (max-width: 1024px) {
+        .grid-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    
+        .grid-item img {
+            width: 40px;
+            height: 40px;
+        }
+    
+        .grid-item {
+          text-align: center;
+          background-color: #fafbfc;
+          width: 150px;
+          height: 130px;}
+    }
+    
+    /* Small screens (phones) */
+    @media (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+        .grid-item img {
+            width: 30px;
+            height: 30px;
+        }
+    
+        .grid-item p {
+            font-size: 10px;
+        }
+        .grid-item {
+          text-align: center;
+          background-color: #fafbfc;
+          width: 150px;
+          height: 130px;}
+    }
+    
+    </style>
   </head>
   <body >
     

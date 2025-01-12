@@ -41,6 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  document.addEventListener('DOMContentLoaded', () => {
+    const shadowHostCompanion = document.getElementById('shadow-host-companion');
+    if (shadowHostCompanion) {
+      shadowHostCompanion.remove();
+    }
+  });
+
+  
   // Load the components
   loadContent('html/nav.html', 'nav-placeholder', addNavEventListeners);
   loadContent('html/hero.html', 'hero-placeholder');

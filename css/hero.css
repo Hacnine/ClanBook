@@ -2,7 +2,7 @@
   background-image: url("../static/images/herobg.svg");
 }
 .hero-section{
-  padding: 90px 0 90px 0;
+  padding: 90px 0;
 }
 .hero-text {
   max-width: 50%;
